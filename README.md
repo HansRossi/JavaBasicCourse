@@ -10,7 +10,7 @@ Welcome to my repository where I publish all the assignments, projects, and exer
 
 ## Projects
 
-- **TBD
+- TBD
 
 ## License
 
