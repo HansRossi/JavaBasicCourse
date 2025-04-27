@@ -10,11 +10,11 @@ Welcome to my repository where I publish all the assignments, projects, and exer
 
 ## Java Version
 
-- **I’m currently using OpenJDK 22.0.1 for my Java projects.
+- **I’m currently using OpenJDK 22.0.1 for my Java projects.**
 
 ## Download Java
 
-- **You can download the latest version of OpenJDK from the official website: OpenJDK Downloads.
+- **You can download the latest version of OpenJDK from the official website: [OpenJDK Downloads](https://jdk.java.net/).**
 
 ## Projects
 
