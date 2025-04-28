@@ -2,13 +2,14 @@ package me.giovanni.lessons.fourth;
 
 public class MathOperations {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 6;
-        double result = a + b;
-        System.out.println(result);
-        result = a / (double) b;
+        double a = 123.31321312;
+        long result = Math.round(a);
         System.out.println(result);
 
-        int reminder = a /  b;
+        a = 3312321.321321;
+        System.out.printf("Rounded value = %.1f\n",a);
+        String name = "Hans";
+        System.out.printf("My name is %s",name);
+
     }
 }
