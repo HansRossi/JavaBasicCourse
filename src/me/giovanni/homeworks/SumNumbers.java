@@ -7,11 +7,10 @@ public class SumNumbers {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter bound: ");
         int bound = scanner.nextInt();
-        if (bound <= 0) {
+        if (bound < 0) {
             System.out.println("You must enter positive number!");
             return;
         }
-
 
         taskByForLoop(bound);
         taskByWhileLoop(bound);
@@ -46,12 +45,18 @@ public class SumNumbers {
         int summary = 0;
         int i = 1;
         do {
-            summary += i;
-            System.out.printf("%d) Num is %d, sum is %d\n", i, i, summary);
-            i++;
-
+            if (bound == 0) {
+                System.out.println("------------------------");
+                System.out.printf("Sum of numbers is %d\n", summary);
+                return;
+            } else {
+                summary += i;
+                System.out.printf("%d) Num is %d, sum is %d\n", i, i, summary);
+                i++;
+            }
         } while(i <= bound);
         System.out.println("------------------------");
-        System.out.printf("Sum of numbers is %d", summary);
+        System.out.printf("Sum of numbers is %d\n", summary);
+
     }
 }
