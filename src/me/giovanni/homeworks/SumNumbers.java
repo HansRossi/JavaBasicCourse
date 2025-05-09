@@ -7,11 +7,10 @@ public class SumNumbers {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter bound: ");
         int bound = scanner.nextInt();
-        if (bound <= 0) {
+        if (bound < 0) {
             System.out.println("You must enter positive number!");
             return;
         }
-
 
         taskByForLoop(bound);
         taskByWhileLoop(bound);
