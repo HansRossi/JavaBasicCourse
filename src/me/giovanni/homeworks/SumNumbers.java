@@ -4,36 +4,36 @@ import java.util.Scanner;
 
 public class SumNumbers {
     public static void main(String[] args) {
-        taskByForLoop();
-        taskByWhileLoop();
-        taskByDoWhileLoop();
-    }
-    private static void taskByForLoop() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter bound: ");
         int bound = scanner.nextInt();
-
-        int summary = 0;
-        for (int i = 1, num = 1; i <= bound; i++, num++) {
-            summary += i;
-            System.out.printf("%d) Num is %d, sum is %d\n", num, i, summary);
+        if (bound <= 0) {
+            System.out.println("You must enter positive number!");
+            return;
         }
-        System.out.println("------------------------");
-        System.out.printf("Sum of numbers is %d", summary);
+
+
+        taskByForLoop(bound);
+        taskByWhileLoop(bound);
+        taskByDoWhileLoop(bound);
     }
-
-    private static void taskByWhileLoop() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter bound: ");
-        int bound = scanner.nextInt();
-
+    private static void taskByForLoop(int bound) {
         int summary = 0;
         int i = 1;
-        int num = 1;
+        for (; i <= bound; i++) {
+            summary += i;
+            System.out.printf("%d) Num is %d, sum is %d\n",i, i, summary);
+        }
+        System.out.println("------------------------");
+        System.out.printf("Sum of numbers is %d\n", summary);
+    }
+
+    private static void taskByWhileLoop(int bound) {
+        int summary = 0;
+        int i = 1;
         while(i <= bound) {
             summary += i;
-            System.out.printf("%d) Num is %d, sum is %d\n", num, i, summary);
-            num++;
+            System.out.printf("%d) Num is %d, sum is %d\n", i, i, summary);
             i++;
         }
         System.out.println("------------------------");
@@ -42,19 +42,12 @@ public class SumNumbers {
 
     }
 
-    private static void taskByDoWhileLoop() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter bound: ");
-        int bound = scanner.nextInt();
-
+    private static void taskByDoWhileLoop(int bound) {
         int summary = 0;
         int i = 1;
-        int num = 1;
-
         do {
             summary += i;
-            System.out.printf("%d) Num is %d, sum is %d\n", num, i, summary);
-            num++;
+            System.out.printf("%d) Num is %d, sum is %d\n", i, i, summary);
             i++;
 
         } while(i <= bound);
