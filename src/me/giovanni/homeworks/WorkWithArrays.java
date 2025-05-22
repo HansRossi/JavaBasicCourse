@@ -16,7 +16,7 @@ public class WorkWithArrays {
             return;
         }
         int[] array = new int[arrayLength];
-
+        //выф
         // Add numbers to array
         for (int i = 0; i < array.length; i++) {
             array[i] = ThreadLocalRandom.current().nextInt(-100, 100);
