@@ -31,7 +31,7 @@ public class MethodHomeWorkRewrite {
         scanner.nextLine();
         System.out.println("Please enter a string: ");
         String stringText = scanner.nextLine();
-        String reversedString = reverseString(stringText);
+        String reversedString = reverseString("");
 
         // Fifth Method
         System.out.println("\nPlease enter base: ");
